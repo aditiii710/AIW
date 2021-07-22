@@ -1,12 +1,14 @@
 const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
 const mongoose = require("mongoose");
+var path = require("path");
 const flash = require("connect-flash");
 const session = require("express-session");
 const app = express();
 const passport = require("passport");
 
-app.use("/public", express.static(__dirname + "/public"));
+// app.use("/public", express.static(__dirname + "/public"));
+app.use(express.static(path.join(__dirname, "public")));
 
 // mongoose
 //   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
