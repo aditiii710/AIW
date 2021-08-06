@@ -320,7 +320,6 @@
 
   .image {
     width: 100%;
-    height: 350px;
     position: relative;
     display: block;
     opacity: 0.8;
@@ -334,19 +333,25 @@
     text-align: center;
   }
   .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6em;
-  width: 50%;
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+    width: 50%;
+  }
+
+  .interests {
+    border: none;
+  }
+
+  .interests:hover {
+    cursor: pointer;
+  }
 </style>
 <br />
 <!--picture-->
 
-<img src="images/main.jpg" alt="about" class="center"> 
-  
-
+<img src="images/main.jpg" alt="about" class="center" />
 
 <!--picture ends-->
 <!--what we offer starts-->
@@ -522,7 +527,10 @@
 
 <!-- WHO YOU ARE SECTION STARTS  -->
 
-<h2 class="heading revealOnScroll" data-animation="fadeInUp">CHOOSE YOUR INTEREST</h2>
+<h2 class="heading revealOnScroll" data-animation="fadeInUp">
+  CHOOSE YOUR INTEREST
+</h2>
+
 <div class="marged" style="display: contents">
   <div class="container" style="display: contents">
     <div class="row" style="margin: auto">
@@ -532,14 +540,20 @@
         data-timeout="400"
       >
         <div class="image">
-          <img src="images/offer-startup.jpg" style="width: 400px" />
+          <a class="interests" href="/startups">
+            <img src="images/offer-startup.jpg" style="width: 400px" />
+          </a>
         </div>
+        <br />
         <h4 class="parts">STARTUPS</h4>
       </div>
       <div class="block revealOnScroll col-sm" data-animation="flipInX">
         <div class="image">
-          <img src="images/offer-school.png" style="width: 400px" />
+          <a class="interests" href="/school">
+            <img src="images/offer-school.png" style="width: 400px" />
+          </a>
         </div>
+        <br />
         <h4 class="parts">SCHOOLS</h4>
       </div>
       <div
@@ -548,29 +562,39 @@
         data-timeout="800"
       >
         <div class="image">
-          <img src="images/offer-manufacture.jpg" style="width: 400px" />
+          <a class="interests" href="/manufacture">
+            <img src="images/offer-manufacture.jpg" style="width: 400px" />
+          </a>
         </div>
+        <br />
         <h4 class="parts">MANUFACTURING</h4>
       </div>
     </div>
   </div>
+  <br />
+  <br />
   <div class="container" style="display: contents">
     <div class="row" style="margin: auto">
-      
       <div
         class="block revealOnScroll col-sm"
         data-animation="flipInX"
         data-timeout="400"
       >
         <div class="image">
-          <img src="images/offer-finance.png" style="width: 400px" />
+          <a class="interests" href="/finance">
+            <img src="images/offer-finance.png" style="width: 400px" />
+          </a>
         </div>
+        <br />
         <h4 class="parts">FINANCE</h4>
       </div>
       <div class="block revealOnScroll col-sm" data-animation="flipInX">
         <div class="image">
-          <img src="images/offer-restaurant.png" style="width: 400px" />
+          <a class="interests" href="/restaurant">
+            <img src="images/offer-restaurant.png" style="width: 400px" />
+          </a>
         </div>
+        <br />
         <h4 class="parts">RESTAURANTS</h4>
       </div>
       <div
@@ -579,8 +603,11 @@
         data-timeout="800"
       >
         <div class="image">
-          <img src="images/offer-industry.png" style="width: 400px" />
+          <a class="interests" href="/business">
+            <img src="images/offer-industry.png" style="width: 400px" />
+          </a>
         </div>
+        <br />
         <h4 class="parts">SMALL SCALE BUSINESS</h4>
       </div>
     </div>
@@ -596,6 +623,19 @@
 <!-- WHY CHOOSE US SECTION -->
 <h2 class="heading revealOnScroll" data-animation="fadeInUp">WHY CHOOSE US</h2>
 
+
+<br />
+<br />
+<br />
+<br /><br />
+<br />
+<br />
+<br /><br />
+<br />
+<br />
+<br />
+
+
 <br />
 <br />
 <br />
@@ -607,16 +647,6 @@
 <br />
 <br />
   
-
-
-
-<!-- WHY CHOOSE US SECTION ENDS  -->
-
-
-<br />
-<br />
-<br />
-<br />
 
 
 <%- include('footer'); -%>
