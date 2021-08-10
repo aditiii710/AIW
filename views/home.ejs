@@ -320,7 +320,6 @@
 
   .image {
     width: 100%;
-    height: 350px;
     position: relative;
     display: block;
     opacity: 0.8;
@@ -332,25 +331,36 @@
 
   .parts {
     text-align: center;
-    }
+  }
   .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6em;
-  width: 50%;
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+    width: 50%;
+  }
 
+  .interests {
+    border: none;
+  }
+
+  .interests:hover {
+    cursor: pointer;
+  }
+  .moretext{
+    display: none;
+  }
+  .list-offer.show-more .moretext {
+  display: inline;
+}
 </style>
 <br />
 <!--picture-->
 
-<img src="images/main.jpg" alt="about" class="center"> 
-  
-
+<img src="images/main.jpg" alt="about" class="center" />
 
 <!--picture ends-->
-<!-- WHAT WE OFFER SECTION  -->
+<!--what we offer starts-->
 <h2 class="heading revealOnScroll" data-animation="fadeInUp">WHAT WE OFFER</h2>
 <div class="offer" style="margin-bottom: 140px">
   <br />
@@ -370,6 +380,24 @@
             Take the idea from ideation to execution with proper guidance and
             expertise.
           </li>
+          <span class="moretext">
+          <li>
+            Take the idea from ideation to execution with proper guidance and
+            expertise.
+          </li>
+          <li>
+            Take the idea from ideation to execution with proper guidance and
+            expertise.
+          </li>
+          <li>
+            Take the idea from ideation to execution with proper guidance and
+            expertise.
+          </li>
+          <li>
+            Take the idea from ideation to execution with proper guidance and
+            expertise.
+          </li>
+        </span>
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -399,6 +427,24 @@
             Developing/Marketing the brand by good supply connectivity and
             maintaining a better customer relation.
           </li>
+          <span class="moretext">
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+          </span>
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -425,6 +471,24 @@
             Developing/Marketing the restaurant brand by maintaining quality
             service and better customer experience.
           </li>
+          <span class="moretext">
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+          </span>
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -455,6 +519,24 @@
             management and teacher with the software and invest the time
             student's education and improve the result of school.
           </li>
+          <span class="moretext">
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+          </span>
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -477,6 +559,24 @@
             businesses.
           </li>
           <li>Prepare taxes and audit for businesses.</li>
+          <span class="moretext">
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+          </span>
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -511,6 +611,24 @@
             Marketing the brand with help of good supply connectivity and better
             customer to develop your business and increase the revenue.
           </li> -->
+          <span class="moretext">
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+          </span>
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -523,7 +641,9 @@
 
 <!-- WHO YOU ARE SECTION STARTS  -->
 
-<h2 class="heading revealOnScroll" data-animation="fadeInUp">CHOOSE YOUR INTEREST</h2>
+<h2 class="heading revealOnScroll" data-animation="fadeInUp">
+  CHOOSE YOUR INTEREST
+</h2>
 
 <div class="marged" style="display: contents">
   <div class="container" style="display: contents">
@@ -534,14 +654,20 @@
         data-timeout="400"
       >
         <div class="image">
-          <img src="images/offer-startup.jpg" style="width: 400px" />
+          <a class="interests" href="/startups">
+            <img src="images/offer-startup.jpg" style="width: 400px" />
+          </a>
         </div>
+        <br />
         <h4 class="parts">STARTUPS</h4>
       </div>
       <div class="block revealOnScroll col-sm" data-animation="flipInX">
         <div class="image">
-          <img src="images/offer-school.png" style="width: 400px" />
+          <a class="interests" href="/school">
+            <img src="images/offer-school.png" style="width: 400px" />
+          </a>
         </div>
+        <br />
         <h4 class="parts">SCHOOLS</h4>
       </div>
       <div
@@ -550,29 +676,39 @@
         data-timeout="800"
       >
         <div class="image">
-          <img src="images/offer-manufacture.jpg" style="width: 400px" />
+          <a class="interests" href="/manufacture">
+            <img src="images/offer-manufacture.jpg" style="width: 400px" />
+          </a>
         </div>
+        <br />
         <h4 class="parts">MANUFACTURING</h4>
       </div>
     </div>
   </div>
+  <br />
+  <br />
   <div class="container" style="display: contents">
     <div class="row" style="margin: auto">
-      
       <div
         class="block revealOnScroll col-sm"
         data-animation="flipInX"
         data-timeout="400"
       >
         <div class="image">
-          <img src="images/offer-finance.png" style="width: 400px" />
+          <a class="interests" href="/finance">
+            <img src="images/offer-finance.png" style="width: 400px" />
+          </a>
         </div>
+        <br />
         <h4 class="parts">FINANCE</h4>
       </div>
       <div class="block revealOnScroll col-sm" data-animation="flipInX">
         <div class="image">
-          <img src="images/offer-restaurant.png" style="width: 400px" />
+          <a class="interests" href="/restaurant">
+            <img src="images/offer-restaurant.png" style="width: 400px" />
+          </a>
         </div>
+        <br />
         <h4 class="parts">RESTAURANTS</h4>
       </div>
       <div
@@ -581,8 +717,11 @@
         data-timeout="800"
       >
         <div class="image">
-          <img src="images/offer-industry.png" style="width: 400px" />
+          <a class="interests" href="/business">
+            <img src="images/offer-industry.png" style="width: 400px" />
+          </a>
         </div>
+        <br />
         <h4 class="parts">SMALL SCALE BUSINESS</h4>
       </div>
     </div>
@@ -598,6 +737,7 @@
 <!-- WHY CHOOSE US SECTION -->
 <h2 class="heading revealOnScroll" data-animation="fadeInUp">WHY CHOOSE US</h2>
 
+
 <br />
 <br />
 <br />
@@ -609,14 +749,6 @@
 <br />
 <br />
   
-
-
-
-<!-- WHY CHOOSE US SECTION ENDS  -->
-<br />
-<br />
-<br />
-<br />
 
 
 <%- include('footer'); -%>
@@ -666,4 +798,15 @@
 
     revealOnScroll();
   });
+  const readMoreBtn = document.querySelector(".expand");
+const text = document.querySelector(".list-offer");
+
+readMoreBtn.addEventListener("click", (e) => {
+  text.classList.toggle("show-more");
+  if (readMoreBtn.innerText === "Know More") {
+    readMoreBtn.innerText = "Know Less";
+  } else {
+    readMoreBtn.innerText = "Know More";
+  }
+});
 </script>
