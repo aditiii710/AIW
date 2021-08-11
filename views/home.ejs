@@ -340,6 +340,7 @@
     width: 50%;
   }
 
+
   .interests {
     border: none;
   }
@@ -347,6 +348,12 @@
   .interests:hover {
     cursor: pointer;
   }
+  .moretext{
+    display: none;
+  }
+  .list-offer.show-more .moretext {
+  display: inline;
+}
 </style>
 <br />
 <!--picture-->
@@ -374,6 +381,24 @@
             Take the idea from ideation to execution with proper guidance and
             expertise.
           </li>
+          <span class="moretext">
+          <li>
+            Take the idea from ideation to execution with proper guidance and
+            expertise.
+          </li>
+          <li>
+            Take the idea from ideation to execution with proper guidance and
+            expertise.
+          </li>
+          <li>
+            Take the idea from ideation to execution with proper guidance and
+            expertise.
+          </li>
+          <li>
+            Take the idea from ideation to execution with proper guidance and
+            expertise.
+          </li>
+        </span>
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -403,6 +428,24 @@
             Developing/Marketing the brand by good supply connectivity and
             maintaining a better customer relation.
           </li>
+          <span class="moretext">
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+          </span>
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -429,6 +472,24 @@
             Developing/Marketing the restaurant brand by maintaining quality
             service and better customer experience.
           </li>
+          <span class="moretext">
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+          </span>
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -459,6 +520,24 @@
             management and teacher with the software and invest the time
             student's education and improve the result of school.
           </li>
+          <span class="moretext">
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+          </span>
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -481,6 +560,24 @@
             businesses.
           </li>
           <li>Prepare taxes and audit for businesses.</li>
+          <span class="moretext">
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+          </span>
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -515,6 +612,24 @@
             Marketing the brand with help of good supply connectivity and better
             customer to develop your business and increase the revenue.
           </li> -->
+          <span class="moretext">
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+            <li>
+              Take the idea from ideation to execution with proper guidance and
+              expertise.
+            </li>
+          </span>
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -684,4 +799,15 @@
 
     revealOnScroll();
   });
+  const readMoreBtn = document.querySelector(".expand");
+const text = document.querySelector(".list-offer");
+
+readMoreBtn.addEventListener("click", (e) => {
+  text.classList.toggle("show-more");
+  if (readMoreBtn.innerText === "Know More") {
+    readMoreBtn.innerText = "Know Less";
+  } else {
+    readMoreBtn.innerText = "Know More";
+  }
+});
 </script>
