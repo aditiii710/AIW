@@ -5,9 +5,10 @@
 
   @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 
-  /* body {
+   body {
     position: relative;
-  } */
+    background: #313131;
+  } 
   .heading {
     text-align: center;
     font-size: 32px;
@@ -16,7 +17,8 @@
     padding-bottom: 20px;
     margin-bottom: 100px;
     position: relative;
-    color: #45505b;
+    color: rgb(245, 243, 243);
+    
     opacity: 0;
   }
 
@@ -255,12 +257,15 @@
     box-shadow: 7px 7px 20px 7px gray;
   }
 
+  .offer-container{
+    background: #3f3f3f;
+  }
   .offer-block-heading {
     font-family: "Arial Black", sans-serif;
     font-size: 2em;
     text-align: center;
     letter-spacing: -1px;
-    background-color: black;
+    background-color: #17e78c;
     color: white;
   }
 
@@ -272,8 +277,9 @@
   .list-offer {
     width: 70%;
     margin: auto;
-  }
-
+    color: #ddd;
+    }
+    
   .expand {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -293,15 +299,15 @@
     margin: auto;
     font-weight: bold;
     color: black;
-    background: white;
-    border: 2px solid black;
-    box-shadow: 5px 5px 0 black, -5px -5px 0 black, -5px 5px 0 black,
-      5px -5px 0 black;
+    background: #17e78c;
+    border: 1px solid black;
+    box-shadow: 1px 1px 0 black, -1px -1px 0 black, -1px 1px 0 black,
+      1px -1px 0 black;
     transition: 500ms ease-in-out;
   }
 
   .expand:hover {
-    box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+    box-shadow: 10px 5px 0 black, -10px -5px 0 black;
   }
 
   .expand:focus {
@@ -331,6 +337,7 @@
 
   .parts {
     text-align: center;
+    color: #ccc;
   }
   .center {
     display: block;
@@ -339,7 +346,6 @@
     margin-top: 6em;
     width: 50%;
   }
-
 
   .interests {
     border: none;
@@ -351,8 +357,14 @@
   .moretext{
     display: none;
   }
-  .list-offer.show-more .moretext {
+  .moretext.show-more {
   display: inline;
+}
+.expand.show-more{
+background: #ff3b7e;
+}
+.offer-container.show-more{
+  margin-bottom: 0px;
 }
 </style>
 <br />
@@ -378,33 +390,41 @@
             Technical support, software/application and website development.
           </li>
           <li>
-            Take the idea from ideation to execution with proper guidance and
+            Take the idea from ideation to execution  proper guidance and
             expertise.
           </li>
-          <span class="moretext">
-          <li>
-            Take the idea from ideation to execution with proper guidance and
-            expertise.
-          </li>
-          <li>
-            Take the idea from ideation to execution with proper guidance and
-            expertise.
-          </li>
-          <li>
-            Take the idea from ideation to execution with proper guidance and
-            expertise.
-          </li>
-          <li>
-            Take the idea from ideation to execution with proper guidance and
-            expertise.
-          </li>
-        </span>
-        </ul>
+         </ul>
         <br />
         <button class="expand">Know More</button>
       </div>
     </div>
   </div>
+
+
+  <span class="moretext">
+  <div class="container offer-container">
+    <div class="row offer-row">
+     
+      <div class="col-sm heading-col">
+        <h1 class="offer-block-heading">STARTUPS</h1>
+        <ul class="list-offer">
+          <li>Setting up vision and developing executable business plan.</li>
+          <li>
+            Technical support, software/application and website development.
+          </li>
+          <li>
+            Take the idea from ideation to execution  proper guidance and
+            expertise.
+          </li>
+          </ul>
+        <br />
+        
+      </div>
+    </div>
+  </div>
+</span>
+
+
   <br />
   <br />
   <div class="container offer-container">
@@ -428,24 +448,7 @@
             Developing/Marketing the brand by good supply connectivity and
             maintaining a better customer relation.
           </li>
-          <span class="moretext">
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-          </span>
+           
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -472,24 +475,7 @@
             Developing/Marketing the restaurant brand by maintaining quality
             service and better customer experience.
           </li>
-          <span class="moretext">
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-          </span>
+         
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -520,24 +506,7 @@
             management and teacher with the software and invest the time
             student's education and improve the result of school.
           </li>
-          <span class="moretext">
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-          </span>
+          
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -560,24 +529,7 @@
             businesses.
           </li>
           <li>Prepare taxes and audit for businesses.</li>
-          <span class="moretext">
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-          </span>
+        
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -612,24 +564,7 @@
             Marketing the brand with help of good supply connectivity and better
             customer to develop your business and increase the revenue.
           </li> -->
-          <span class="moretext">
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-            <li>
-              Take the idea from ideation to execution with proper guidance and
-              expertise.
-            </li>
-          </span>
+          
         </ul>
         <br />
         <button class="expand">Know More</button>
@@ -801,9 +736,14 @@
   });
   const readMoreBtn = document.querySelector(".expand");
 const text = document.querySelector(".list-offer");
+const texttt = document.querySelector(".moretext");
+const box = document.querySelector(".offer-container");
 
 readMoreBtn.addEventListener("click", (e) => {
   text.classList.toggle("show-more");
+  texttt.classList.toggle("show-more");
+  box.classList.toggle("show-more");
+  readMoreBtn.classList.toggle("show-more");
   if (readMoreBtn.innerText === "Know More") {
     readMoreBtn.innerText = "Know Less";
   } else {

@@ -1,12 +1,36 @@
 <%- include('navbar'); -%>
 <style>
-  iframe {
-    height: -webkit-fill-available;
-    width: -webkit-fill-available;
-  }
+body {
+  position: relative;
+  background: #313131;
+} 
+
+ .video-container {
+    overflow: hidden;
+    position: relative;
+    margin-top: 65px;
+    width:93%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   }
 
   .startup-container {
     display: contents;
+    color: #ddd;
   }
 
   .startup-row {
@@ -14,10 +38,21 @@
     margin: auto;
     margin-top: 30px;
   }
+  @media (max-width: 1024px){
+    .video-container {
+      width:100%;
+    margin-top: 90px;
+    margin-left: 0px;
+    margin-right: 0px;
+   
+}
+  }
 </style>
 
 <!-- youtube link -->
-<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <!-- youtube link end -->
 
 <br />
@@ -45,7 +80,9 @@
     </div>
   </div>
 </div>
-
+<br>
+<br>
+<br>
 <div class="container startup-container">
   <div class="row startup-row">
     <div class="col-sm heading-col">
