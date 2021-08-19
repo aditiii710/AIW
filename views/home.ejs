@@ -5,10 +5,10 @@
 
   @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 
-   body {
+  body {
     position: relative;
-    background: #313131;
-  } 
+    background: #191919;
+  }
   .heading {
     text-align: center;
     font-size: 32px;
@@ -18,7 +18,7 @@
     margin-bottom: 100px;
     position: relative;
     color: rgb(245, 243, 243);
-    
+
     opacity: 0;
   }
 
@@ -257,15 +257,15 @@
     box-shadow: 7px 7px 20px 7px gray;
   }
 
-  .offer-container{
-    background: #3f3f3f;
+  .offer-container {
+    background: #2b2a2a;
   }
   .offer-block-heading {
     font-family: "Arial Black", sans-serif;
     font-size: 2em;
     text-align: center;
     letter-spacing: -1px;
-    background-color: #17e78c;
+    background-color: #da2d37;
     color: white;
   }
 
@@ -278,8 +278,8 @@
     width: 70%;
     margin: auto;
     color: #ddd;
-    }
-    
+  }
+
   .expand {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -299,7 +299,7 @@
     margin: auto;
     font-weight: bold;
     color: black;
-    background: #17e78c;
+    background: #da2d37;
     border: 1px solid black;
     box-shadow: 1px 1px 0 black, -1px -1px 0 black, -1px 1px 0 black,
       1px -1px 0 black;
@@ -354,18 +354,30 @@
   .interests:hover {
     cursor: pointer;
   }
-  .moretext{
+  .moretext {
     display: none;
   }
   .moretext.show-more {
-  display: inline;
-}
-.expand.show-more{
-background: #ff3b7e;
-}
-.offer-container.show-more{
-  margin-bottom: 0px;
-}
+    display: inline;
+  }
+  .expand.show-more {
+    background: #f8898e;
+  }
+  .offer-container.show-more {
+    margin-bottom: 0px;
+  }
+
+  .chatbot {
+    position: fixed;
+    right: 44px;
+    bottom: 12px;
+    width: 84px;
+    height: 84px;
+    z-index: 900;
+    cursor: pointer;
+    background-image: url("images/chatbot.svg");
+    background-size: cover;
+  }
 </style>
 <br />
 <!--picture-->
@@ -377,200 +389,346 @@ background: #ff3b7e;
 <h2 class="heading revealOnScroll" data-animation="fadeInUp">WHAT WE OFFER</h2>
 <div class="offer" style="margin-bottom: 140px">
   <br />
-  <div class="container offer-container">
-    <div class="row offer-row">
-      <div class="col-sm">
-        <img src="images/offer-startup.jpg" style="width: inherit" />
+  <!-- CAROUSEL STARTS -->
+  <div
+    id="carouselExampleControls"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container offer-container">
+          <div class="row offer-row">
+            <div class="col-sm">
+              <img src="images/offer-startup2.png" style="width: inherit" />
+            </div>
+            <div class="col-sm heading-col">
+              <h1 class="offer-block-heading">STARTUPS</h1>
+              <ul class="list-offer">
+                <li>
+                  Setting up vision and developing executable business plan.
+                </li>
+                <li>
+                  Technical support, software/application and website
+                  development.
+                </li>
+                <li>
+                  Take the idea from ideation to execution proper guidance and
+                  expertise.
+                </li>
+              </ul>
+              <br />
+              <button class="expand">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <span class="moretext">
+          <div class="container offer-container">
+            <div class="row offer-row">
+              <div class="col-sm heading-col">
+                <h1 class="offer-block-heading">STARTUPS</h1>
+                <ul class="list-offer">
+                  <li>
+                    Setting up vision and developing executable business plan.
+                  </li>
+                  <li>
+                    Technical support, software/application and website
+                    development.
+                  </li>
+                  <li>
+                    Take the idea from ideation to execution proper guidance and
+                    expertise.
+                  </li>
+                </ul>
+                <br />
+              </div>
+            </div>
+          </div>
+        </span>
       </div>
-      <div class="col-sm heading-col">
-        <h1 class="offer-block-heading">STARTUPS</h1>
-        <ul class="list-offer">
-          <li>Setting up vision and developing executable business plan.</li>
-          <li>
-            Technical support, software/application and website development.
-          </li>
-          <li>
-            Take the idea from ideation to execution  proper guidance and
-            expertise.
-          </li>
-         </ul>
-        <br />
-        <button class="expand">Know More</button>
+      <div class="carousel-item">
+        <div class="container offer-container">
+          <div class="row offer-row">
+            <div class="col-sm">
+              <img src="images/offer-manufacture2.png" style="width: inherit" />
+            </div>
+            <div class="col-sm heading-col">
+              <h1 class="offer-block-heading">MANUFACTURING</h1>
+              <ul class="list-offer">
+                <li>
+                  Customized software for daily operations activity like
+                  employee and finance management.
+                </li>
+                <li>
+                  Making the process flow more efficient and automate the manual
+                  processes with technology and consultancy expertise with
+                  customized personal/performance management software.
+                </li>
+                <li>
+                  Developing/Marketing the brand by good supply connectivity and
+                  maintaining a better customer relation.
+                </li>
+              </ul>
+              <br />
+              <button class="expand">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <span class="moretext">
+          <div class="container offer-container">
+            <div class="row offer-row">
+              <div class="col-sm heading-col">
+                <h1 class="offer-block-heading">MANUFACTURING</h1>
+                <ul class="list-offer">
+                  <li>
+                    Setting up vision and developing executable business plan.
+                  </li>
+                  <li>
+                    Technical support, software/application and website
+                    development.
+                  </li>
+                  <li>
+                    Take the idea from ideation to execution proper guidance and
+                    expertise.
+                  </li>
+                </ul>
+                <br />
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+      <div class="carousel-item">
+        <div class="container offer-container">
+          <div class="row offer-row">
+            <div class="col-sm">
+              <img src="images/offer-restaurant2.png" style="width: inherit" />
+            </div>
+            <div class="col-sm heading-col">
+              <h1 class="offer-block-heading">RESTAURANTS</h1>
+              <ul class="list-offer">
+                <!-- <li>Customized software for customer/table management.</li> -->
+                <li>
+                  Making their operation more efficient by performance/material
+                  management software and decrease the input cost and hence
+                  increasing the revenue.
+                </li>
+                <li>
+                  Developing/Marketing the restaurant brand by maintaining
+                  quality service and better customer experience.
+                </li>
+              </ul>
+              <br />
+              <button class="expand">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <span class="moretext">
+          <div class="container offer-container">
+            <div class="row offer-row">
+              <div class="col-sm heading-col">
+                <h1 class="offer-block-heading">STARTUPS</h1>
+                <ul class="list-offer">
+                  <li>
+                    Setting up vision and developing executable business plan.
+                  </li>
+                  <li>
+                    Technical support, software/application and website
+                    development.
+                  </li>
+                  <li>
+                    Take the idea from ideation to execution proper guidance and
+                    expertise.
+                  </li>
+                </ul>
+                <br />
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+      <div class="carousel-item">
+        <div class="container offer-container">
+          <div class="row offer-row">
+            <div class="col-sm">
+              <img src="images/offer-school2.png" style="width: inherit" />
+            </div>
+            <div class="col-sm heading-col">
+              <h1 class="offer-block-heading">SCHOOLS</h1>
+              <ul class="list-offer">
+                <li>
+                  Customized software for managing all departments teachers,
+                  finance and students.
+                </li>
+                <li>
+                  Whole school will be operated through the software only, from
+                  reaching to teachers/students/parents to online classes,
+                  teaching material, attendance and online database.
+                </li>
+                <li>
+                  Increase the efficiency by decreasing the manual efforts of
+                  management and teacher with the software and invest the time
+                  student's education and improve the result of school.
+                </li>
+              </ul>
+              <br />
+              <button class="expand">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <span class="moretext">
+          <div class="container offer-container">
+            <div class="row offer-row">
+              <div class="col-sm heading-col">
+                <h1 class="offer-block-heading">STARTUPS</h1>
+                <ul class="list-offer">
+                  <li>
+                    Setting up vision and developing executable business plan.
+                  </li>
+                  <li>
+                    Technical support, software/application and website
+                    development.
+                  </li>
+                  <li>
+                    Take the idea from ideation to execution proper guidance and
+                    expertise.
+                  </li>
+                </ul>
+                <br />
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+      <div class="carousel-item">
+        <div class="container offer-container">
+          <div class="row offer-row">
+            <div class="col-sm">
+              <img src="images/offer-finance2.png" style="width: 400px" />
+            </div>
+            <div class="col-sm heading-col">
+              <h1 class="offer-block-heading">FINANCE</h1>
+              <ul class="list-offer">
+                <li>
+                  Consultancy for company registration and GST registration.
+                </li>
+                <li>
+                  Services like ITR filing and GST filing for individual or
+                  businesses.
+                </li>
+                <li>Prepare taxes and audit for businesses.</li>
+              </ul>
+              <br />
+              <button class="expand">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <span class="moretext">
+          <div class="container offer-container">
+            <div class="row offer-row">
+              <div class="col-sm heading-col">
+                <h1 class="offer-block-heading">STARTUPS</h1>
+                <ul class="list-offer">
+                  <li>
+                    Setting up vision and developing executable business plan.
+                  </li>
+                  <li>
+                    Technical support, software/application and website
+                    development.
+                  </li>
+                  <li>
+                    Take the idea from ideation to execution proper guidance and
+                    expertise.
+                  </li>
+                </ul>
+                <br />
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+      <div class="carousel-item">
+        <div class="container offer-container">
+          <div class="row offer-row">
+            <div class="col-sm">
+              <img src="images/offer-industry2.png" style="width: 400px" />
+            </div>
+            <div class="col-sm heading-col">
+              <h1 class="offer-block-heading">SMALL SCALE BUSINESS</h1>
+              <ul class="list-offer">
+                <li>
+                  Support businesses like retail shops, whole sale shops,
+                  departmental stores or clothing etc.
+                </li>
+                <li>
+                  Operate all branches single handedly via business website and
+                  application/software for reaching customers, maintaining the
+                  directory of employee and having a complete real time overview
+                  of your business.
+                </li>
+                <li>
+                  Connect with global market/customers via online platforms with
+                  support from our technical and marketing team.
+                </li>
+              </ul>
+              <br />
+              <button class="expand">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <span class="moretext">
+          <div class="container offer-container">
+            <div class="row offer-row">
+              <div class="col-sm heading-col">
+                <h1 class="offer-block-heading">STARTUPS</h1>
+                <ul class="list-offer">
+                  <li>
+                    Setting up vision and developing executable business plan.
+                  </li>
+                  <li>
+                    Technical support, software/application and website
+                    development.
+                  </li>
+                  <li>
+                    Take the idea from ideation to execution proper guidance and
+                    expertise.
+                  </li>
+                </ul>
+                <br />
+              </div>
+            </div>
+          </div>
+        </span>
       </div>
     </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
+  <!-- CAROUSEL ENDS  -->
 
-  <span class="moretext">
-  <div class="container offer-container">
-    <div class="row offer-row">
-     
-      <div class="col-sm heading-col">
-        <h1 class="offer-block-heading">STARTUPS</h1>
-        <ul class="list-offer">
-          <li>Setting up vision and developing executable business plan.</li>
-          <li>
-            Technical support, software/application and website development.
-          </li>
-          <li>
-            Take the idea from ideation to execution  proper guidance and
-            expertise.
-          </li>
-          </ul>
-        <br />
-        
-      </div>
-    </div>
-  </div>
-</span>
-
-
-  <br />
-  <br />
-  <div class="container offer-container">
-    <div class="row offer-row">
-      <div class="col-sm">
-        <img src="images/offer-manufacture.jpg" style="width: inherit" />
-      </div>
-      <div class="col-sm heading-col">
-        <h1 class="offer-block-heading">MANUFACTURING</h1>
-        <ul class="list-offer">
-          <li>
-            Customized software for daily operations activity like employee and
-            finance management.
-          </li>
-          <li>
-            Making the process flow more efficient and automate the manual
-            processes with technology and consultancy expertise with customized
-            personal/performance management software.
-          </li>
-          <li>
-            Developing/Marketing the brand by good supply connectivity and
-            maintaining a better customer relation.
-          </li>
-           
-        </ul>
-        <br />
-        <button class="expand">Know More</button>
-      </div>
-    </div>
-  </div>
-  <br />
-  <br />
-  <div class="container offer-container">
-    <div class="row offer-row">
-      <div class="col-sm">
-        <img src="images/offer-restaurant.png" style="width: inherit" />
-      </div>
-      <div class="col-sm heading-col">
-        <h1 class="offer-block-heading">RESTAURANTS</h1>
-        <ul class="list-offer">
-          <!-- <li>Customized software for customer/table management.</li> -->
-          <li>
-            Making their operation more efficient by performance/material
-            management software and decrease the input cost and hence increasing
-            the revenue.
-          </li>
-          <li>
-            Developing/Marketing the restaurant brand by maintaining quality
-            service and better customer experience.
-          </li>
-         
-        </ul>
-        <br />
-        <button class="expand">Know More</button>
-      </div>
-    </div>
-  </div>
-  <br />
-  <br />
-  <div class="container offer-container">
-    <div class="row offer-row">
-      <div class="col-sm">
-        <img src="images/offer-school.png" style="width: inherit" />
-      </div>
-      <div class="col-sm heading-col">
-        <h1 class="offer-block-heading">SCHOOLS</h1>
-        <ul class="list-offer">
-          <li>
-            Customized software for managing all departments teachers, finance
-            and students.
-          </li>
-          <li>
-            Whole school will be operated through the software only, from
-            reaching to teachers/students/parents to online classes, teaching
-            material, attendance and online database.
-          </li>
-          <li>
-            Increase the efficiency by decreasing the manual efforts of
-            management and teacher with the software and invest the time
-            student's education and improve the result of school.
-          </li>
-          
-        </ul>
-        <br />
-        <button class="expand">Know More</button>
-      </div>
-    </div>
-  </div>
-  <br />
-  <br />
-  <div class="container offer-container">
-    <div class="row offer-row">
-      <div class="col-sm">
-        <img src="images/offer-finance.png" style="width: 400px" />
-      </div>
-      <div class="col-sm heading-col">
-        <h1 class="offer-block-heading">FINANCE</h1>
-        <ul class="list-offer">
-          <li>Consultancy for company registration and GST registration.</li>
-          <li>
-            Services like ITR filing and GST filing for individual or
-            businesses.
-          </li>
-          <li>Prepare taxes and audit for businesses.</li>
-        
-        </ul>
-        <br />
-        <button class="expand">Know More</button>
-      </div>
-    </div>
-  </div>
-  <br />
-  <br />
-  <div class="container offer-container">
-    <div class="row offer-row">
-      <div class="col-sm">
-        <img src="images/offer-industry.png" style="width: 400px" />
-      </div>
-      <div class="col-sm heading-col">
-        <h1 class="offer-block-heading">SMALL SCALE BUSINESS</h1>
-        <ul class="list-offer">
-          <li>
-            Support businesses like retail shops, whole sale shops, departmental
-            stores or clothing etc.
-          </li>
-          <li>
-            Operate all branches single handedly via business website and
-            application/software for reaching customers, maintaining the
-            directory of employee and having a complete real time overview of
-            your business.
-          </li>
-          <li>
-            Connect with global market/customers via online platforms with
-            support from our technical and marketing team.
-          </li>
-          <!-- <li>
-            Marketing the brand with help of good supply connectivity and better
-            customer to develop your business and increase the revenue.
-          </li> -->
-          
-        </ul>
-        <br />
-        <button class="expand">Know More</button>
-      </div>
-    </div>
-  </div>
   <br />
 </div>
 <!-- WHAT WE OFFER SECTION ENDS -->
@@ -591,7 +749,7 @@ background: #ff3b7e;
       >
         <div class="image">
           <a class="interests" href="/startups">
-            <img src="images/offer-startup.jpg" style="width: 400px" />
+            <img src="images/offer-startup.png" style="width: 400px" />
           </a>
         </div>
         <br />
@@ -613,7 +771,7 @@ background: #ff3b7e;
       >
         <div class="image">
           <a class="interests" href="/manufacture">
-            <img src="images/offer-manufacture.jpg" style="width: 400px" />
+            <img src="images/offer-manufacture.png" style="width: 400px" />
           </a>
         </div>
         <br />
@@ -632,7 +790,7 @@ background: #ff3b7e;
       >
         <div class="image">
           <a class="interests" href="/finance">
-            <img src="images/offer-finance.png" style="width: 400px" />
+            <img src="images/offer-finance.png" style="height: 300px" style="width: 400px" />
           </a>
         </div>
         <br />
@@ -641,7 +799,7 @@ background: #ff3b7e;
       <div class="block revealOnScroll col-sm" data-animation="flipInX">
         <div class="image">
           <a class="interests" href="/restaurant">
-            <img src="images/offer-restaurant.png" style="width: 400px" />
+            <img src="images/offer-restaurant.png" style="height: 300px" style="width: 400px" />
           </a>
         </div>
         <br />
@@ -654,7 +812,7 @@ background: #ff3b7e;
       >
         <div class="image">
           <a class="interests" href="/business">
-            <img src="images/offer-industry.png" style="width: 400px" />
+            <img src="images/offer-industry.png" style="height: 300px" style="width: 400px" />
           </a>
         </div>
         <br />
@@ -662,7 +820,6 @@ background: #ff3b7e;
       </div>
     </div>
   </div>
-  
 </div>
 
 <!-- WHO YOU ARE SECTION ENDS  -->
@@ -673,7 +830,6 @@ background: #ff3b7e;
 <!-- WHY CHOOSE US SECTION -->
 <h2 class="heading revealOnScroll" data-animation="fadeInUp">WHY CHOOSE US</h2>
 
-
 <br />
 <br />
 <br />
@@ -684,9 +840,7 @@ background: #ff3b7e;
 <br />
 <br />
 <br />
-  
-
-
+<div class="chatbot" style="display: block"></div>
 <%- include('footer'); -%>
 
 <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
@@ -734,20 +888,22 @@ background: #ff3b7e;
 
     revealOnScroll();
   });
-  const readMoreBtn = document.querySelector(".expand");
-const text = document.querySelector(".list-offer");
-const texttt = document.querySelector(".moretext");
-const box = document.querySelector(".offer-container");
+  for (let i = 0; i < 6; i++) {
+    const readMoreBtn = document.getElementsByClassName("expand")[i];
+    const text = document.getElementsByClassName("list-offer")[i];
+    const texttt = document.getElementsByClassName("moretext")[i];
+    const box = document.getElementsByClassName("offer-container")[i];
 
-readMoreBtn.addEventListener("click", (e) => {
-  text.classList.toggle("show-more");
-  texttt.classList.toggle("show-more");
-  box.classList.toggle("show-more");
-  readMoreBtn.classList.toggle("show-more");
-  if (readMoreBtn.innerText === "Know More") {
-    readMoreBtn.innerText = "Know Less";
-  } else {
-    readMoreBtn.innerText = "Know More";
+    readMoreBtn.addEventListener("click", (e) => {
+      text.classList.toggle("show-more");
+      texttt.classList.toggle("show-more");
+      box.classList.toggle("show-more");
+      readMoreBtn.classList.toggle("show-more");
+      if (readMoreBtn.innerText === "Know More") {
+        readMoreBtn.innerText = "Know Less";
+      } else {
+        readMoreBtn.innerText = "Know More";
+      }
+    });
   }
-});
 </script>
