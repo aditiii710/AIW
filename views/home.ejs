@@ -4,7 +4,7 @@
   @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i");
 
   @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
-
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
   body {
     position: relative;
 
@@ -261,6 +261,7 @@
   .offer-container {
 
     background: #2b2a2a;
+    font-family: 'Poppins',sans-serif;
 
   }
   .offer-block-heading {
@@ -370,17 +371,6 @@
     margin-bottom: 0px;
   }
 
-  .chatbot {
-    position: fixed;
-    right: 44px;
-    bottom: 12px;
-    width: 84px;
-    height: 84px;
-    z-index: 900;
-    cursor: pointer;
-    background-image: url("images/chatbot.svg");
-    background-size: cover;
-  }
 </style>
 <br />
 <!--picture-->
@@ -512,7 +502,7 @@
           <div class="row offer-row">
             <div class="col-sm">
 
-              <img src="images/offer-restaurant2.png" style="width: inherit" />
+              <img src="images/offer-restaurant2.png" style="width: inherit; height: 300px" />
 
             </div>
             <div class="col-sm heading-col">
@@ -764,7 +754,7 @@
       >
         <div class="image">
           <a class="interests" href="/startups">
-            <img src="images/offer-startup.png" style="width: 400px" />
+            <img src="images/offer-startup.jpg" style="width: 400px" />
           </a>
         </div>
         <br />
@@ -773,7 +763,7 @@
       <div class="block revealOnScroll col-sm" data-animation="flipInX">
         <div class="image">
           <a class="interests" href="/school">
-            <img src="images/offer-school.png" style="width: 400px" />
+            <img src="images/offer-school.jpg" style="width: 400px" />
           </a>
         </div>
         <br />
@@ -786,7 +776,7 @@
       >
         <div class="image">
           <a class="interests" href="/manufacture">
-            <img src="images/offer-manufacture.png" style="width: 400px" />
+            <img src="images/offer-manufacture.jpg" style="width: 400px" />
           </a>
         </div>
         <br />
@@ -805,7 +795,7 @@
       >
         <div class="image">
           <a class="interests" href="/finance">
-            <img src="images/offer-finance.png" style="height: 300px" style="width: 400px" />
+            <img src="images/offer-finance.jpg"  style="width: 400px" />
           </a>
         </div>
         <br />
@@ -814,7 +804,7 @@
       <div class="block revealOnScroll col-sm" data-animation="flipInX">
         <div class="image">
           <a class="interests" href="/restaurant">
-            <img src="images/offer-restaurant.png" style="height: 300px" style="width: 400px" />
+            <img src="images/offer-restaurant.jpg"  style="width: 400px" />
           </a>
         </div>
         <br />
@@ -827,7 +817,7 @@
       >
         <div class="image">
           <a class="interests" href="/business">
-            <img src="images/offer-industry.png" style="height: 300px" style="width: 400px" />
+            <img src="images/offer-industry.jpg" style="width: 400px" />
           </a>
         </div>
         <br />
@@ -855,7 +845,6 @@
 <br />
 <br />
 <br />
-<div class="chatbot" style="display: block"></div>
 <%- include('footer'); -%>
 
 <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
@@ -921,4 +910,18 @@
       }
     });
   }
+</script>
+
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {},
+    Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"),
+      s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = "https://embed.tawk.to/612011b9d6e7610a49b137e1/1fdikafmk";
+    s1.charset = "UTF-8";
+    s1.setAttribute("crossorigin", "*");
+    s0.parentNode.insertBefore(s1, s0);
+  })();
 </script>
