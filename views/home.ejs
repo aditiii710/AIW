@@ -321,11 +321,11 @@
     display: flex;
   }
 
-  /* .block {
+ /* .block {
     width: 31.33%;
     margin: 1%;
     float: left;
-  } */
+  }  */
 
   .image {
     width: 100%;
@@ -336,6 +336,7 @@
     transition: all 400ms ease;
     -webkit-background-size: cover;
     background-size: cover;
+    text-align: center;
   }
 
   .parts {
@@ -352,6 +353,7 @@
 
   .interests {
     border: none;
+    align-items: center;
   }
 
   .interests:hover {
@@ -368,6 +370,16 @@
   }
   .offer-container.show-more {
     margin-bottom: 0px;
+  }
+  .sstartup-container {
+    display: contents;
+    color: #ddd;
+  }
+
+  .sstartup-row {
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
   }
 
 </style>
@@ -416,8 +428,7 @@
             </div>
           </div>
         </div>
-
-        <span class="moretext">
+c        <span class="moretext">
           <div class="container offer-container">
             <div class="row offer-row">
               <div class="col-sm heading-col">
@@ -445,9 +456,7 @@
         <div class="container offer-container">
           <div class="row offer-row">
             <div class="col-sm">
-
               <img src="images/offer-manufacture2.jpg" style="width: inherit" />
-
             </div>
             <div class="col-sm heading-col">
               <h1 class="offer-block-heading">MANUFACTURING</h1>
@@ -461,11 +470,7 @@
                   processes with technology and consultancy expertise with
                   customized personal/performance management software.
                 </li>
-                <li>
-                  Developing/Marketing the brand by good supply connectivity and
-                  maintaining a better customer relation.
-                </li>
-              </ul>
+                </ul>
               <br />
               <button class="expand">Know More</button>
             </div>
@@ -479,7 +484,8 @@
                 <h1 class="offer-block-heading">MANUFACTURING</h1>
                 <ul class="list-offer">
                   <li>
-                    Setting up vision and developing executable business plan.
+                    Developing/Marketing the brand by good supply connectivity and
+                  maintaining a better customer relation.
                   </li>
                   <li>
                     Technical support, software/application and website
@@ -501,7 +507,8 @@
           <div class="row offer-row">
             <div class="col-sm">
 
-              <img src="images/offer-restaurant2.jpg" style="width: inherit; />
+              <img src="images/offer-restaurant2.jpg" style="width: inherit" />
+             
 
             </div>
             <div class="col-sm heading-col">
@@ -568,11 +575,7 @@
                   reaching to teachers/students/parents to online classes,
                   teaching material, attendance and online database.
                 </li>
-                <li>
-                  Increase the efficiency by decreasing the manual efforts of
-                  management and teacher with the software and invest the time
-                  student's education and improve the result of school.
-                </li>
+                
               </ul>
               <br />
               <button class="expand">Know More</button>
@@ -587,7 +590,9 @@
                 <h1 class="offer-block-heading">STARTUPS</h1>
                 <ul class="list-offer">
                   <li>
-                    Setting up vision and developing executable business plan.
+                    Increase the efficiency by decreasing the manual efforts of
+                    management and teacher with the software and invest the time
+                    student's education and improve the result of school.
                   </li>
                   <li>
                     Technical support, software/application and website
@@ -622,7 +627,13 @@
                   Services like ITR filing and GST filing for individual or
                   businesses.
                 </li>
-                <li>Prepare taxes and audit for businesses.</li>
+                <li>Pinpoint problems backing up income sources or expense deductions.</li>
+                <li>
+                  Prepare taxes and audit for businesses.
+                </li>
+                <li>
+                  Keep good records.
+                </li>
               </ul>
               <br />
               <button class="expand">Know More</button>
@@ -637,7 +648,7 @@
                 <h1 class="offer-block-heading">STARTUPS</h1>
                 <ul class="list-offer">
                   <li>
-                    Setting up vision and developing executable business plan.
+                    Prepare taxes and audit for businesses.
                   </li>
                   <li>
                     Technical support, software/application and website
@@ -675,10 +686,7 @@
                   directory of employee and having a complete real time overview
                   of your business.
                 </li>
-                <li>
-                  Connect with global market/customers via online platforms with
-                  support from our technical and marketing team.
-                </li>
+                
               </ul>
               <br />
               <button class="expand">Know More</button>
@@ -693,7 +701,8 @@
                 <h1 class="offer-block-heading">STARTUPS</h1>
                 <ul class="list-offer">
                   <li>
-                    Setting up vision and developing executable business plan.
+                    Connect with global market/customers via online platforms with
+                    support from our technical and marketing team.
                   </li>
                   <li>
                     Technical support, software/application and website
@@ -749,7 +758,7 @@
       <div
         class="block revealOnScroll col-sm"
         data-animation="flipInX"
-        data-timeout="400"
+        data-timeout="800"
       >
         <div class="image">
           <a class="interests" href="/startups">
@@ -771,8 +780,7 @@
       <div
         class="block revealOnScroll col-sm"
         data-animation="flipInX"
-        data-timeout="800"
-      >
+        data-timeout="800">
         <div class="image">
           <a class="interests" href="/manufacture">
             <img src="images/offer-manufacture.jpg" style="width: 400px" />
@@ -834,14 +842,26 @@
 <!-- WHY CHOOSE US SECTION -->
 <h2 class="heading revealOnScroll" data-animation="fadeInUp">WHY CHOOSE US</h2>
 
-<br />
-<br />
-<br />
-<br /><br />
-<br />
-<br />
-<br /><br />
-<br />
+<div class="container sstartup-container">
+  <div class="row sstartup-row">
+    <div class="col-sm hheading-col">
+      <h1 class="ooffer-block-heading">STARTUPS</h1>
+      <ul class="llist-offer">
+        <li>Setting up vision and developing executable business plan.</li>
+        <li>
+          Technical support, software/application and website development.
+        </li>
+        <li>
+          Take the idea from ideation to execution with proper guidance and
+          expertise.
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm">
+      <img src="images/offer-startup.jpg" style="width: inherit" />
+    </div>
+  </div>
+</div>
 <br />
 <br />
 <%- include('footer'); -%>
